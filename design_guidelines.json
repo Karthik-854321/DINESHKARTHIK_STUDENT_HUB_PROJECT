@@ -1,0 +1,142 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "The Nexus Intelligent Hub",
+      "persona": "Cyber-Organic Architect",
+      "vibe": "Bioluminescent, Fluid, Precision, Depth",
+      "description": "A productivity dashboard that feels like a living organism. Dark void backgrounds pierced by neon pulse lines and crystal-clear glass interfaces."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-medium tracking-normal",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-xs tracking-wider uppercase opacity-70"
+      },
+      "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#030712",
+          "subtle": "#0B1221",
+          "gradient_start": "#030712",
+          "gradient_end": "#0f172a"
+        },
+        "primary": {
+          "default": "#39ff14",
+          "glow": "#39ff1480",
+          "gradient": "linear-gradient(135deg, #39ff14 0%, #00f3ff 100%)"
+        },
+        "secondary": {
+          "default": "#00f3ff",
+          "dim": "#00f3ff20"
+        },
+        "accent": {
+          "purple": "#bc13fe",
+          "orange": "#ff6b00"
+        },
+        "text": {
+          "primary": "#ffffff",
+          "secondary": "#94a3b8",
+          "muted": "#475569"
+        },
+        "border": {
+          "subtle": "rgba(255, 255, 255, 0.08)",
+          "active": "rgba(57, 255, 20, 0.3)"
+        }
+      },
+      "semantic": {
+        "success": "#39ff14",
+        "warning": "#ffb900",
+        "error": "#ff3b30",
+        "info": "#00f3ff"
+      }
+    },
+    "glassmorphism": {
+      "strategies": {
+        "panel_base": "bg-black/20 backdrop-blur-xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)]",
+        "panel_hover": "hover:bg-white/5 hover:border-white/20 transition-all duration-300",
+        "card_depth": "bg-gradient-to-br from-white/5 to-white/0 border-t border-l border-white/10 shadow-lg",
+        "modal": "bg-black/60 backdrop-blur-2xl border border-white/10"
+      }
+    },
+    "layout": {
+      "grid_system": {
+        "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6",
+        "card_span": {
+          "tasks": "col-span-12 md:col-span-8 row-span-2",
+          "vitality": "col-span-12 md:col-span-4 row-span-1",
+          "study": "col-span-12 md:col-span-4 row-span-1",
+          "resources": "col-span-12 md:col-span-6 row-span-1",
+          "ai_nudge": "col-span-12 md:col-span-6 row-span-1"
+        }
+      },
+      "spacing": {
+        "page_padding": "p-4 md:p-8 pb-32",
+        "section_gap": "gap-8"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "rounded-full bg-primary text-black font-bold px-6 py-2 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)] transition-all",
+        "glass": "rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-white backdrop-blur-md transition-all",
+        "ghost": "rounded-full hover:bg-white/5 text-muted-foreground hover:text-white transition-colors"
+      },
+      "inputs": {
+        "base": "bg-black/20 border-white/10 rounded-xl focus:border-primary/50 focus:ring-1 focus:ring-primary/50 placeholder:text-white/20"
+      },
+      "navigation": {
+        "dock": "fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4 p-3 rounded-2xl bg-black/40 backdrop-blur-2xl border border-white/10 shadow-2xl z-50",
+        "dock_item": "w-12 h-12 rounded-xl flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 hover:scale-110 transition-all cursor-pointer relative"
+      },
+      "cards": {
+        "base": "rounded-3xl p-6 glass-panel relative overflow-hidden group",
+        "header": "flex items-center justify-between mb-4",
+        "title": "text-lg font-medium text-white flex items-center gap-2"
+      }
+    },
+    "motion": {
+      "animations": {
+        "float": "animate-float",
+        "pulse_glow": "animate-pulse-glow",
+        "slide_up": "animate-in slide-in-from-bottom-4 fade-in duration-500",
+        "scale_in": "animate-in zoom-in-95 fade-in duration-300"
+      },
+      "hover_effects": {
+        "scale": "hover:scale-[1.02] active:scale-[0.98]",
+        "glow": "hover:shadow-[0_0_30px_-5px_rgba(57,255,20,0.3)]"
+      }
+    },
+    "assets": {
+      "images": {
+        "ai_avatar": "https://images.unsplash.com/photo-1758391407696-d18916c1b23f?auto=format&fit=crop&w=150&q=80",
+        "resource_pattern": "https://images.unsplash.com/photo-1670834416041-e2d96529ed52?auto=format&fit=crop&w=600&q=80",
+        "wellness_bg": "https://images.unsplash.com/photo-1758391407696-d18916c1b23f?auto=format&fit=crop&w=600&q=80"
+      },
+      "icons": {
+        "library": "lucide-react",
+        "instructions": "Use Lucide React icons for all UI elements. Use thick stroke (2px) for a bold look."
+      }
+    },
+    "specific_instructions": [
+      "CRITICAL: Background MUST be a dark, fixed container with moving radial gradients. Do NOT use a solid color. Create a 'MeshGradient' component.",
+      "CRITICAL: Navigation MUST be a floating dock at the bottom of the screen. Do NOT place main navigation in a top sidebar.",
+      "CRITICAL: Use 'Outfit' font for all headings. It defines the Cyber look.",
+      "CRITICAL: Task Manager must support drag-and-drop reordering (use @dnd-kit/core or similar).",
+      "CRITICAL: The 'Architect' (AI) module should feel like a chat interface or a suggestion feed, distinct from other cards.",
+      "CRITICAL: Implement circular progress rings for Vitality/Wellness using SVG circles with 'stroke-dasharray'.",
+      "CRITICAL: All interactive elements must have 'data-testid' attributes.",
+      "CRITICAL: Ensure strict separation of 'Marketing' visuals and 'Dashboard' utility. This is a functional dashboard, so maintain high contrast for text.",
+      "CRITICAL: DO NOT use 'Inter' font.",
+      "CRITICAL: For the 'Vitality' module, use the 'Electric Purple' accent color to differentiate it from the 'Tasks' (Green)."
+    ]
+  }
+}
