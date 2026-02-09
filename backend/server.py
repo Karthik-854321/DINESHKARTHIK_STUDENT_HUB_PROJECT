@@ -18,7 +18,7 @@ load_dotenv(ROOT_DIR / '.env')
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db = client[os.getenv("DB_NAME","student_hub")
 
 JWT_SECRET = os.environ.get('JWT_SECRET', 'nexus_default_secret')
 JWT_ALGORITHM = "HS256"
