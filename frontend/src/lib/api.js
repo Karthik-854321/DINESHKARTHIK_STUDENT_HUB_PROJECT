@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_BASE = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
-const api = axios.create({ baseURL: API_BASE });
+const api = axios.create({ baseURL: "https://students-hub-g94h.onrender.com" });
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('nexus_token');
