@@ -24,6 +24,33 @@ JWT_SECRET = os.environ.get('JWT_SECRET', 'nexus_default_secret')
 JWT_ALGORITHM = "HS256"
 
 app = FastAPI()
+from fastapi import FastAPI
+
+app = FastAPI()   
+@app.get("/")
+def root():
+    return {"status": "Backend running"}
+
+@app.get("/ai/nudges")
+def ai_nudges():
+    return {"nudge": "Focus on one task at a time."}
+
+@app.get("/dashboard/stats")
+def dashboard_stats():
+    return {"tasksCompleted": 0, "studyHours": 0}
+
+@app.get("/tasks")
+def tasks():
+    return []
+
+@app.get("/study/plans")
+def study_plans():
+    return []
+
+@app.get("/wellness/pomodoro")
+def pomodoro():
+    return {"completed": 0}
+
 api_router = APIRouter(prefix="/api")
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
